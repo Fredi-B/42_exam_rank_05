@@ -30,3 +30,6 @@
 *.exe
 *.out
 *.app
+
+# Subjects
+ex00/subject.en.txt
