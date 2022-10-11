@@ -16,7 +16,7 @@ public:
 	ASpell(void);
 	ASpell(std::string _name, std::string _effects);
 	ASpell(const ASpell &other);
-	~ASpell(void);
+	virtual ~ASpell(void);
 
 	ASpell &operator=(const ASpell &other);
 

@@ -5,13 +5,16 @@
 # include <vector>
 # include "ASpell.hpp"
 # include "ATarget.hpp"
+# include "SpellBook.hpp"
+
+class	SpellBook;
 
 class	Warlock
 {
 private:
-	std::string				name;
-	std::string				title;
-	std::vector<ASpell *>	spells;
+	std::string	name;
+	std::string	title;
+	SpellBook	spellbook;
 
 public:
 	Warlock(std::string _name, std::string _title);
@@ -29,9 +32,6 @@ public:
 
 private:
 	Warlock(void);
-	Warlock(const Warlock &other);
-
-	Warlock &operator=(const Warlock &other);
 };
 
 #endif
