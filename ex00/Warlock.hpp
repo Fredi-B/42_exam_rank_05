@@ -20,9 +20,6 @@ public:
 	void	introduce() const;
 private:
 	Warlock(void);
-	Warlock(const Warlock &other);
-
-	Warlock &operator=(const Warlock &other);
 };
 
 #endif

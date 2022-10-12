@@ -14,11 +14,7 @@ class	Fwoosh : public ASpell
 
 public:
 	Fwoosh(void);
-	Fwoosh(std::string _name, std::string _effects);
-	Fwoosh(const Fwoosh &other);
 	~Fwoosh(void);
-
-	Fwoosh &operator=(const Fwoosh &other);
 
 	virtual	Fwoosh	*clone(void);
 

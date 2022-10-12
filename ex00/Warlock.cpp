@@ -2,8 +2,6 @@
 
 Warlock::Warlock(void) {}
 
-Warlock::Warlock(const Warlock &other) {*this = other;}
-
 Warlock::Warlock(std::string _name, std::string _title) : name(_name), title(_title)
 {
 	std::cout << this->name << ": This looks like another boring day." << std::endl;
@@ -12,16 +10,6 @@ Warlock::Warlock(std::string _name, std::string _title) : name(_name), title(_ti
 Warlock::~Warlock(void)
 {
 	std::cout << this->name << ": My job here is done!" << std::endl;
-}
-
-Warlock	&Warlock::operator=(const Warlock &other)
-{
-	if (this != &other)
-	{
-		this->name = other.getName();
-		this->title = other.getTitle();
-	}
-	return (*this);
 }
 
 const std::string	Warlock::getName(void) const {return (this->name);}

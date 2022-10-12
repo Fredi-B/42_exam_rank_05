@@ -15,7 +15,7 @@ public:
 	ATarget(void);
 	ATarget(std::string _type);
 	ATarget(const ATarget &other);
-	~ATarget(void);
+	virtual ~ATarget(void);
 
 	ATarget &operator=(const ATarget &other);
 

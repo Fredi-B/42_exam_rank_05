@@ -11,11 +11,7 @@ class	Dummy : public ATarget
 
 public:
 	Dummy(void);
-	Dummy(std::string _type);
-	Dummy(const Dummy &other);
 	~Dummy(void);
-
-	Dummy &operator=(const Dummy &other);
 
 	virtual Dummy	*clone(void);
 
