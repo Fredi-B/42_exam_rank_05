@@ -10,7 +10,7 @@ public:
 	Dummy(void);
 	virtual ~Dummy(void);
 
-	Dummy *clone(void);
+	ATarget *clone(void);
 };
 
 #endif

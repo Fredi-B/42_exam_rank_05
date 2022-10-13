@@ -10,7 +10,7 @@ public:
 	Fwoosh(void);
 	virtual ~Fwoosh(void);
 
-	Fwoosh *clone(void);
+	ASpell *clone(void);
 };
 
 #endif

@@ -13,6 +13,7 @@ int main()
   Warlock richard("Richard", "foo");
   richard.setTitle("Hello, I'm Richard the Warlock!");
   BrickWall model1;
+  Dummy     dummy1;
 
   Polymorph* polymorph = new Polymorph();
   TargetGenerator tarGen;
@@ -27,6 +28,6 @@ int main()
   ATarget* wall = tarGen.createTarget("Inconspicuous Red-brick Wall");
 
   richard.introduce();
-  richard.launchSpell("Polymorph", *wall);
+  richard.launchSpell("Polymorph", dummy1);
   richard.launchSpell("Fireball", *wall);
 }

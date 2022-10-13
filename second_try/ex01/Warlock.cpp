@@ -7,6 +7,14 @@ Warlock::Warlock(std::string _name, std::string _title) : name(_name), title(_ti
 
 Warlock::~Warlock(void)
 {
+	std::map<std::string, ASpell *>::iterator	it;
+	it = this->spells.begin();
+	while (it != this->spells.end())
+	{
+		if (it->second)
+			delete it->second;
+		it++;
+	}
 	std::cout << this->name << ": My job here is done!" << std::endl;
 }
 
@@ -39,6 +47,7 @@ void	Warlock::forgetSpell(std::string spell_name)
 		this->spells.erase(it);
 	}
 }
+
 void	Warlock::launchSpell(std::string spell_name, ATarget &target)
 {
 	std::map<std::string, ASpell *>::iterator	it;
