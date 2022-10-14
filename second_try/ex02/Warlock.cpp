@@ -41,4 +41,5 @@ void	Warlock::launchSpell(std::string spell_name, ATarget &target)
 	tmp = this->spell_book.createSpell(spell_name);
 	if (tmp)
 		tmp->launch(target);
+	delete tmp;
 }
